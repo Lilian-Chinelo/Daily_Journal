@@ -1,2 +1,2 @@
 # Daily_Journal
-A daily journey for posts and various entries.
+A daily journal for posts and various entries.
