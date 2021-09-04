@@ -1,0 +1,13 @@
+<!-- Title: Personal blog. 
+Author: Lilian Umeakunne
+Date: 20/07/2021
+Project: Personal blog built using Node and express.
+Current file: This is the post.ejs file setup for the post page. This enables the title and content to be rendered on the post page-->
+
+<%- include('partials/header'); -%>
+
+<h1><%=title %></h1>
+<p><%= content %></p>
+
+
+<%- include('partials/footer'); -%>

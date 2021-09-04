@@ -1,0 +1,24 @@
+<!-- Title: Personal blog. 
+Author: Lilian Umeakunne
+Date: 20/07/2021
+Project: Personal blog built using Node and express.
+Current file: This is the compose.ejs file setup for the compose page. This is the setup for the title and content text box-->
+
+<%- include('partials/header'); -%>
+<h1>Compose</h1>
+
+<form action="/compose" method="post">
+
+    <div class="mb-3 form-group">
+        <label class="form-label">Title</label>
+        <input class="form-control" type="text" name="postTitle" autofocus>
+        <div class="form-text"></div>
+        <div class="mb-3">
+        <label class="form-label">New Post</label>
+        <textarea class="form-control" name="postBody" rows = "8" cols = "50">Write your post here...</textarea>
+        </div>
+    </div>
+    <button type="submit" name="button" class="btn btn-primary">Publish</button>
+</form>
+
+<%- include('partials/footer'); -%>

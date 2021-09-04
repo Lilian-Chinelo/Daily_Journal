@@ -1,0 +1,21 @@
+{
+  "name": "blog_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "start": "node app.js",
+  "author": "Lilian Umeakunne",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.0.4",
+    "mongosh": "^1.0.5"
+  }
+}

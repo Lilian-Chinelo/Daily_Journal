@@ -1,0 +1,24 @@
+<!-- Title: Personal blog. 
+Author: Lilian Umeakunne
+Date: 20/07/2021
+Project: Personal blog built using Node and express.
+Current file: This is the home.ejs file setup for the home page. -->
+
+<%- include('partials/header'); -%>
+<h1>Home</h1>
+<p> <%= startingContent %></p> 
+
+<!-- forEach statement-->
+<% posts.forEach(function(post){%> 
+
+    <h1><%= post.title %></h1>
+
+    <!-- the substring was called on the post content to truncate all posts on the home page to 100 characters max. -->
+    <p>
+    <%=post.content.substring(0, 100) + " ... "%>
+    <a href="/posts/<%=post._id%>">Read More</a>
+    </p>
+    
+<%});%>
+
+<%- include('partials/footer'); -%>
